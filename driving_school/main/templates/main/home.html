@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} Home Page {% endblock title%}
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Bienvenue</h1>
+        <p class="lead">
+            Ceci est la page d'accueil de Driving_school
+        </p>
+        <hr class="my-4">
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'logout' %}" role="button">Deconnexion</a>
+            <a class="btn btn-primary btn-lg" href="{% url 'login' %}" role="button">Connexion</a>
+        </p>
+    </div>
+
+{% endblock content %}

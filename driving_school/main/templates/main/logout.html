@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Logout{% endblock title %}
+{% block content %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+        <h5 class="card-title">Vous avez été déconnecté</h5>
+        <p class="card-text">
+            Merci de vous être connecté à Driving_school</p>
+        <br><hr><a href="{% url 'login' %}" class="btn btn-primary">Reconnectez-vous</a>
+        </div>
+    </div>
+
+
+{% endblock content %}
